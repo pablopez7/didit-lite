@@ -10,6 +10,8 @@ import { TruncatePipe } from './pipes/truncate.pipe';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
+import { LogrosService } from './services/logros.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,8 @@ import { HomeComponent } from './home/home.component';
     NoopAnimationsModule,
     MaterialModule.forRoot()
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ LogrosService ],
+  bootstrap: [ AppComponent ]
 })
+
 export class AppModule { }
