@@ -24,4 +24,4 @@ export interface Logro {
   id: number
   title: string
   description?: string
-} 
+}

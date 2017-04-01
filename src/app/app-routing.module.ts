@@ -1,0 +1,16 @@
+import { HomeComponent } from './home/home.component';
+import { LogroComponent } from './logro/logro.component';
+import { NgModule } from '@angular/core'
+import { RouterModule } from '@angular/router'
+
+@NgModule({
+    imports: [
+        RouterModule.forRoot([
+            {path:'', component:HomeComponent},
+            {path:':id', component:LogroComponent}
+        ])
+    ],
+    exports: [ RouterModule ]
+})
+
+export class AppRoutingModule{}
